@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/test', function () {
-    return response()->json('sosal?');
+    return response()->json('sosal? with autodeploy');
 });
