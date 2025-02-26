@@ -32,4 +32,5 @@ jobs:
             php artisan migrate --force
             docker-compose down
             docker-compose up --build -d
+            docker-compose exec backend php artisan migrate --force
           EOF
