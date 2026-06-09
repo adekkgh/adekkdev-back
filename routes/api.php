@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/test', function () {
-    $names = DB::table('test')->select('name', 'rndNumber')->get();
+    $test = '1234 hello world';
 
-    return response()->json($names);
+    return response()->json($test);
 });
